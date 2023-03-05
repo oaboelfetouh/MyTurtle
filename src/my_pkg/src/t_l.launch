@@ -1,0 +1,5 @@
+<launch>
+<rosparam command = "load" file = "$(find my_pkg)/config/params.yaml" />
+<node name = "sender" pkg = "my_pkg" type = "talker.py" output = "screen" />
+<node name = "reciever" pkg = "my_pkg" type = "listener.py" output = "screen"/>
+</launch>
